@@ -1,0 +1,311 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish' , sans-serif;
+}
+#container
+{
+    height: 100vh;
+    width: 100%;
+    background: #f7f1e4;
+    position: relative;
+}
+#navbar
+{
+    height: 15%;
+    width: 90%;
+    clip-path: polygon(100% 0, 95% 50%, 50% 100%, 5% 50%, 0 0);
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background: #91633b;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+}
+#navbar ul,ol
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 25px 0px;
+}
+ul
+{
+    position: absolute;
+    left: 5%;
+}
+ol
+{
+    position: absolute;
+    right: 5%;
+}
+li
+{
+    margin: 0px 60px;
+    font-size: 23px;
+}
+li a
+{
+    text-decoration: none;
+    color: #e2e2e2;
+    transition: 0.5s;
+}
+li a:hover
+{
+    color: #000;
+}
+#logo
+{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: calc(50% - 120px);
+}
+#logo img
+{
+    height: 120px;
+}
+#sideImg
+{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top: 25%;
+    right: 32%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+#sideImg img
+{
+    height: 600px;
+}
+#sideImg:hover img
+{
+    animation: animate 2s linear;
+}
+@keyframes animate {
+    0%
+    {
+        transform: scale(1);
+    }
+    80%
+    {
+        transform: scale(0.60);
+    }
+    95%
+    {
+        transform: scale(1.10);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
+}
+#sideImg1
+{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    right: 63%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-image:auto ;
+}
+#sideImg1 img
+{
+    height: 600px;
+    background-image:cover ;
+}
+#sideImg2
+{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    right: 20%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-image:auto ;
+}
+#sideImg2 img
+{
+    height: 600px;
+    background-image:cover ;
+}
+#sideImg3
+{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-image:auto ;
+}
+#sideImg3 img
+{
+    height: 600px;
+    background-image:cover ;
+}
+#sideImg4
+{
+    height: 600px;
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    right: 56%;
+    z-index: 999;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    background-image:auto ;
+}
+
+
+#contentSection
+{
+    height: 400px;
+    width: 750px;
+    position: absolute;
+    left: 5%;
+    top: calc(50% - 200px);
+    background-image: auto;
+}
+#contentSection h2
+{
+    font-family:"Edwardian Script";
+    font-size: 100px;
+    color: #91633b;
+    font-weight: 900;
+}
+#contentSection p
+{
+    padding: 0 0 0 20px;
+    font-family:" Brush Script MT";
+}
+#contentSection button
+{
+    height: 70px;
+    width: 200px;
+    border: none;
+    outline: none;
+    background: #91633b;
+    color: #eaf5ff;
+    cursor: pointer;
+    font-weight: 900;
+    margin: 20px 0;
+    z-index: 100;
+    position: absolute;
+}
+#contentSection button:hover
+{
+    animation: animate 1s linear;
+}
+#contentSection img
+{
+    height: 800px;
+    position: absolute;
+    top: -200px;
+    left: -100px;
+    filter: drop-shadow(1px 1px 0px #d40219)
+            drop-shadow(-1px -1px 0px #d40219);
+    opacity: 0.08;
+    z-index: 1;
+    background-image: auto;
+}
+#pagination
+{
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#socialLinks
+{
+    left: 5%;
+}
+
+#pagination #line,#socialLinks #line
+{
+    height: 3px;
+    width: 200px;
+    background: #000;
+    border-radius: 30px;
+}
+#pagination h2,#socialLinks i
+{
+    margin: 0px 30px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#pagination h2:hover
+{
+    color: #d40219;
+}
+#pagination1
+{
+    height: 60px;
+    width: 200px;
+    position: absolute;
+    bottom: 4%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#socialLinks
+{
+    left: 5%;
+}
+
+#pagination1 #line,#socialLinks #line
+{
+    height: 3px;
+    width: 200px;
+    background: #000;
+    border-radius: 30px;
+}
+#pagination1 h2,#socialLinks i
+{
+    margin: 0px 30px;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#pagination1 h2:hover
+{
+    color: #d40219;
+}
+
+
+
+
+
+
+
+
+
+
